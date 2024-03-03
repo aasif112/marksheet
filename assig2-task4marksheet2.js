@@ -69,11 +69,21 @@ if(engObtmarks >= 50 && engObtmarks <= 100) {
     engPassfail.innerHTML = "Pass";
 } else {    engPassfail.innerHTML = "Fail"; }
 
+
 // IF FAIL IN ONE SUBJ: 
 if (sciObtmarks < 50  || mathObtmarks < 50 || engObtmarks < 50) {
     grndPassfail.innerHTML = "<b>Fail</b>";
     grndPassfail2.innerHTML = "<b>Fail</b>";
-    remarks.innerHTML = "Fail in one Subject."
+    var subj;
+    if (sciObtmarks < 50) {
+        subj = "Science";
+    } else if (mathObtmarks < 50) {
+        subj = "Maths";
+    } else if (engObtmarks < 50) {
+        subj = "English";
+    }
+
+    remarks.innerHTML = `Fail in <b>${subj}</b>.`;
 }
 // IF PASS IN EACH SUB: DECIDE GRADE
 if (sciObtmarks >= 50 && mathObtmarks >= 50 && engObtmarks >= 50){

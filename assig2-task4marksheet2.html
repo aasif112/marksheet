@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4-Marksheet2</title>
+    <style>
+        * { margin: 0;
+            padding: 0;
+        }
+        body {  margin: 50px;
+                padding: 50px;
+        }
+        td, th  { padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+                font-size: large;
+            }
+              
+      
+        #footbox {  display: flex;
+                    column-gap: 1rem;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h3>Marksheet</h3>
+    <br>    <br>
+    <button id="getResult">Generate Result</button>
+    <br>    <br>
+    <table border="1px" width="800">
+        <tr>
+            <th>Subject Name</th>
+            <th>Total Marks</th>
+            <th>Passing Marks</th>
+            <th>Obtained Marks</th>
+            <th>Pass / Fail</th>
+        </tr>
+        <tr>
+            <th>SCIENCE</th>
+            <td id="sciTmarks">100</td>
+            <td id="sciPmarks">50</td>
+            <td id="sciObtmarks"></td>
+            <td id="sciPassfail"></td>
+        </tr>
+        
+             
+        <tr>
+            <th>MATHS</th>
+            <td id="mathTmarks">100</td>
+            <td id="mathPmarks">50</td>
+            <td id="mathObtmarks"></td>
+            <td id="mathPassfail"></td>
+        </tr>
+        
+        <tr>
+            <th>ENGLISH</th>
+            <td id="engTmarks">100</td>
+            <td id="engPmarks">50</td>
+            <td id="engObtmarks"></td>
+            <td id="engPassfail"></td>
+        </tr>
+        
+        <tr>
+            <th>GRAND TOTAL</th>
+            <td id="grndTmarks">300</td>
+            <td id="grndPmarks">--</td>
+            <td id="grndObtmarks"></td>
+            <td id="grndPassfail"></td>
+        </tr>
+    
+        <tr>
+            <td  colspan="5">
+                <div id="footbox">
+                    <div id="footbox1">
+                        <div>Total Marks:</div>
+                        <div>Marks Obtained:</div>
+                        <div>Percentage:</div>
+                        <div>Grade:</div>
+                        <div>Remarks:</div>
+                    </div>
+                <div id="footbox2">
+                    <div>300</div>
+                    <div id="grndObtmarks2"></div>
+                    <div id="perc">...</div>
+                    <div id="grndPassfail2"></div>
+                    <div id="remarks">...</div>
+                </div>
+            </div>                  
+                    
+            </td>
+        </tr>
+
+    </table>
+
+
+    <script src="assig2-task4marksheet2.js"></script>
+</body>
+</html>
